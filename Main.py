@@ -10,11 +10,9 @@ def main():
 def about():
     return render_template('skils.html')
 
-@app.route('/progekrs')
+@app.route('/projects')
 def skils():
-    return render_template('progekrs.html')
-
-
+    return render_template('projects.html')
 
 
 
