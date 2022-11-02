@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Мои проекты
+
+{% endblock %}
+
+{% block body %}
+<section class="certificates container" id="certificates">
+    <!-- Заголовок -->
+    <h2 class="heading">Certificates</h2>
+    <!-- Наполнение контентом -->
+    <div class="certificates-content">
+        <div class="certificates-box">
+            <img src="{{ url_for('static', filename='img/Linux.png') }}" alt="" class="certificates-img">
+            <!-- overlay -->
+            <div class="certificates-overlay">
+                <h2>Database</h2>
+                <a href="#">
+                    <i class='bx bx-certification' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="certificates-box">
+            <img src="{{ url_for('static', filename='img/TelegramBot.png') }}" alt="" class="certificates-img">>
+            <!-- overlay -->
+            <div class="certificates-overlay">
+                <h2>Version Control</h2>
+                <a href="#">
+                    <i class='bx bx-certification' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="certificates-box">
+            <img src="{{ url_for('static', filename='img/web-design.png') }}" alt="" class="certificates-img">>
+            <!-- overlay -->
+            <div class="certificates-overlay">
+                <h2>C#</h2>
+                <a href="#">
+                    <i class='bx bx-certification' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="certificates-box">
+            <img src="{{ url_for('static', filename='img/interface-design.png') }}" alt="" class="certificates-img">>
+            <!-- overlay -->
+            <div class="certificates-overlay">
+                <h2>Python</h2>
+                <a href="#">
+                    <i class='bx bx-certification' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="certificates-box">
+            <img src="{{ url_for('static', filename='img/java.png') }}" alt="" class="certificates-img">>
+            <!-- overlay -->
+            <div class="certificates-overlay">
+                <h2>Java API</h2>
+                <a href="#">
+                    <i class='bx bx-certification' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="certificates-box">
+            <img src="{{ url_for('static', filename='img/oop.png') }}" alt="" class="certificates-img">>
+            <!-- overlay -->
+            <div class="certificates-overlay">
+                <h2>Java OOP</h2>
+                <a href="#">
+                    <i class='bx bx-certification' ></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

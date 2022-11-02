@@ -10,10 +10,9 @@ def main():
 def about():
     return render_template('skils.html')
 
-@app.route('/projects')
+@app.route('/certificates')
 def skils():
-    return render_template('projects.html')
-
+    return render_template('certificates.html')
 
 
 if __name__ == '__main__':
