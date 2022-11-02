@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Обо мне
+{% endblock %}
+
+{% block body %}
+
+<!-- Фото и путь к файлу -->
+<section class="home container" id="home">
+    <div class="home-content">
+        <div class="home-img">
+            <img src="{{ url_for('static', filename='img/My_photo.png') }}"" alt="">
+        </div>
+        <!-- Информация под фото -->
+        <div class="home-text">
+            <h3>Hello</h3>
+            <h2>I'm <span class="color">Dmitrii</span></h2>
+        </div>
+        <!-- Значки с социальными сетями -->
+        <div class="social">
+            <a href="#"><i class='bx bxl-vk'></i></a>
+            <a href="#"><i class='bx bxl-telegram'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </div>
+</section>
+<!-- Обо мне -->
+<section class="about container" id="about">
+    <h2 class="heading">About</h2>
+    <div class="about-content">
+        <div class="about-data">
+            <span>About Me</span>
+            <h2>Back-end developer<br>
+                Python & Java
+            </h2>
+        </div>
+        <div class="about-text">
+            <p>Hello! I am Dmitrii Kulik. I create websites, telegram bots, mobile applications.</p>
+            <p>On this site you can see information about me, get acquainted with my projects, as well as get acquainted with my skills.</p>
+            <p>Contact me if my person interests you.</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
