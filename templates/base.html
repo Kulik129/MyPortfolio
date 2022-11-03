@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dmitrii</title> 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.css') }}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>{% block title %}{% endblock %}</title>
 </head>
+
 <body>
     <header>
         <div class="nav container">
@@ -18,11 +20,33 @@
                 <li><a href="/" class="nav-link">About me</a></li>
                 <li><a href="/skils" class="nav-link">Skils</a></li>
                 <li><a href="/certificates" class="nav-link">Certificates</a></li>
+                <li><a href="/projects" class="nav-link">Projects</a></li>
+
             </ul>
+            <!-- Menu Icon -->
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
     </header> 
+    
 
     {% block body %}{% endblock %}
-    
+       <!-- Footer -->
+    <section class="footer container" id="footer">
+        <!-- Footer links -->
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Disclaimer</a>
+        </div>
+        <!-- Copyright -->
+        <p>&#169;Kulik Dmitrii Igorevich</p>
+    </section>
+    <script src="{{ url_for('static', filename='script/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='script/main.js') }}"></script>
+
 </body>
 </html>

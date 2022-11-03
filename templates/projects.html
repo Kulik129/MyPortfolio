@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Projects
+{% endblock %}
+
+{% block body %}
+<section class="projects container " id="projects">
+    <h2 class="heading">Projects</h2>
+    <!-- Наполнение контентом -->
+    <div class="projects-content swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <!-- Review Box -->
+                <div class="review-box">
+                    <i class='bx bx-message-square'></i>
+                    <p class="review-text">
+                        Telegram Bot. Can...
+                    </p>
+                    <div class="review-profile">
+                        <h2>Telegram Bot</h2>
+                        <span>!!!</span>
+                        <img src="{{ url_for('static', filename='img/proj1.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!-- Review Box -->
+                <div class="review-box">
+                    <i class='bx bx-message-square'></i>
+                    <p class="review-text">
+                        Mobile app. Can ...
+                    </p>
+                    <div class="review-profile">
+                        <h2>Mobile app</h2>
+                        <span>!!!</span>
+                        <img src="{{ url_for('static', filename='img/proj2.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!-- Review Box -->
+                <div class="review-box">
+                    <i class='bx bx-message-square'></i>
+                    <p class="review-text">
+                        Website. Can ...
+                    </p>
+                    <div class="review-profile">
+                        <h2>Website</h2>
+                        <span>!!!</span>
+                        <img src="{{ url_for('static', filename='img/proj3.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+    </div>
+
+</section>
+{% endblock %}
